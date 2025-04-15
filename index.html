@@ -1500,8 +1500,15 @@ div.tocify {
 </div>
 
 
-<p><strong>演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．</strong></p>
+<p><strong>演習では，他人のデバイスに触らない。自分のデバイスを，他人に触らせない。</strong></p>
 <p><strong>♠が付いている項目は必須ではない。</strong></p>
+<div id="教科書参考文献" class="section level2">
+<h2>教科書・参考文献</h2>
+<ul>
+<li>教科書：矢吹太朗『Webのしくみ』（サイエンス社, 2020） <a href="https://github.com/taroyabuki/webbook/tree/master">サポートサイト</a></li>
+<li><a href="https://github.com/taroyabuki/webbook/blob/master/chapters/bibliography.md">参考文献</a></li>
+</ul>
+</div>
 <div id="第1回-48" class="section level2">
 <h2>第1回 4/8</h2>
 <ol style="list-style-type: decimal">
@@ -1632,22 +1639,15 @@ div.tocify {
 </tbody>
 </table>
 </div>
-<div id="資料" class="section level3">
-<h3>資料</h3>
+<div id="第1回48の宿題githubアカウントの作成" class="section level3">
+<h3>第1回（4/8）の宿題：GitHubアカウントの作成</h3>
 <ul>
-<li>教科書：矢吹太朗『Webのしくみ』（サイエンス社, 2020） <a href="https://github.com/taroyabuki/webbook/tree/master">サポートサイト</a></li>
-<li><a href="https://chatgpt.com/g/g-67f32edee5c0819198d0a32784828e13-riteraho-chibatech-aixue-ke-qing-bao-riterasi">質問用チャットボット（非公式）</a></li>
-</ul>
-</div>
-<div id="宿題githubアカウントの作成" class="section level3">
-<h3>宿題：GitHubアカウントの作成</h3>
-<ul>
-<li><a href="https://github.com/" class="uri">https://github.com/</a> でアカウントを作成する．
+<li><a href="https://github.com/" class="uri">https://github.com/</a> でアカウントを作成する。
 <ol style="list-style-type: decimal">
-<li>大学のメールアドレス（s.chibakoudai.jp）を登録する．</li>
-<li>確認のメールが届いたら，対応する．</li>
-<li>卒業後使えなくなることに備えて，別のメールアドレスも登録しておくとよい．右上のアイコン→Settings→Emails→Add email address</li>
-<li>GitHubではブラウザの自動翻訳をオフにする．（「commit」が「責任を負わせる」になるのは困る．）</li>
+<li>大学のメールアドレス（s.chibakoudai.jp）を登録する。</li>
+<li>確認のメールが届いたら，対応する。</li>
+<li>GitHubではブラウザの自動翻訳をオフにする。（「commit」が「責任を負わせる」になるのは困る。）</li>
+<li>♠卒業後使えなくなることに備えて，別のメールアドレスも登録しておくとよい。右上のアイコン→Settings→Emails→Add email address</li>
 </ol></li>
 <li>図書館の本を検索する方法を確認する。
 <ul>
@@ -1660,6 +1660,49 @@ div.tocify {
 </div>
 <div id="第2回-415" class="section level2">
 <h2>第2回 4/15</h2>
+<p>概要</p>
+<p>GitHubのアカウントができているはずである。ここでは，そのユーザ名を●●●とする。</p>
+<p><a href="https://github.com/" class="uri">https://github.com/</a>●●● がGitHubの自分のメインページである。ブックマークやお気に入りに登録して，すぐに開けるようにしておくとよい。</p>
+<ol style="list-style-type: decimal">
+<li>GitHubのリポジトリを作る。</li>
+<li>Pagesを有効にする。</li>
+<li>ウェブページを更新する。</li>
+</ol>
+<div id="リポジトリの作成" class="section level3">
+<h3>リポジトリの作成</h3>
+<p><strong>リポジトリ</strong>を作成する。次の点に注意する。</p>
+<ol style="list-style-type: decimal">
+<li>Repository nameを<code>literacy</code>とする（全て半角小文字）。</li>
+<li>README fileを追加する。</li>
+</ol>
+<p><a href="https://github.com/" class="uri">https://github.com/</a>●●●/literacy がリポジトリのURLである。</p>
+</div>
+<div id="pagesの有効化" class="section level3">
+<h3>Pagesの有効化</h3>
+<p><strong>Pages</strong>を有効にする。次の点に注意する。</p>
+<ol style="list-style-type: decimal">
+<li>Deploy from a branchとする。</li>
+<li>Branchはmain，Folderは「/ (root)」とする。</li>
+</ol>
+<p><a href="https://" class="uri">https://</a>●●●.github.io/literacy/ がPagesのURLである。有効にしてしばらくするとアクセスできるようになる。</p>
+<p>♠URLが<code>https://github.com/</code>で始まらない理由がわかるだろうか。</p>
+</div>
+<div id="ウェブページの更新" class="section level3">
+<h3>ウェブページの更新</h3>
+<p>README.mdを更新して，しばらくすると，Pagesに反映されることを確認する。</p>
+<p>README.mdが存在しない場合：上記の手順の「README fileを追加する」をやり忘れている。ここでは「+」とクリックしてREADME.mdを新たに作ればよいのだが，指示を丁寧に読む習慣は身に付けておいたほうがいい。</p>
+</div>
+<div id="第2回415の宿題github-pageの公開" class="section level3">
+<h3>第2回（4/15）の宿題：GitHub Pageの公開</h3>
+<p>次の二つのURLをmanabaのアンケートに入力する。●●●の部分を自分のユーザ名で置き換えて，アクセスできることを確認してから入力すること。</p>
+<ol style="list-style-type: decimal">
+<li>リポジトリのURL　形式はhttps://github.com/●●●/literacy ，リポジトリが存在すればよい。</li>
+<li>PagesのURL　形式：<a href="https://" class="uri">https://</a>●●●.github.io/literacy/ ，ページが存在すればよい（内容は自由）。</li>
+</ol>
+</div>
+</div>
+<div id="第3回-422" class="section level2">
+<h2>第3回 4/22</h2>
 <p>準備中</p>
 </div>
 
