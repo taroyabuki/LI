@@ -1865,7 +1865,7 @@ Code」をインストールして，UI（ユーザインタフェース）を�
 </div>
 <div id="第8回-610" class="section level2">
 <h2>第8回 6/10</h2>
-<ul>
+<ol style="list-style-type: decimal">
 <li>生成AIで「●●のウェブサイトのカラーテーマ（三色）を決めて，それを使う極めて単純なHTMLを作って」として，簡単なHTMLを生成し，home.htmlとして保存する。</li>
 <li>スタイルの適用方法が三つあることを知る。そのために：
 <ul>
@@ -1876,11 +1876,64 @@ Code」をインストールして，UI（ユーザインタフェース）を�
 <li>GitHubに，home.htmlとstyle.cssをアップロードする。（本当は，クローン・コミット・プッシュなのだが，ここでは割愛）</li>
 <li><a href="https://" class="uri">https://</a>●●●.github.io/literacy/home.html
 でページが表示されることを確認する。</li>
-</ul>
+</ol>
 <div id="第8回610の宿題スタイルを使うページの公開" class="section level3">
 <h3>第8回（6/10）の宿題：スタイルを使うページの公開</h3>
 <p>次のURLをmanabaのアンケートに入力する。●●●の部分を自分のユーザ名で置き換えて，ページにアクセスできること，スタイルが適用されていることを確認してから入力すること。</p>
 <p>ページのURL　形式はhttps://●●●.github.io/literacy/home.html</p>
+</div>
+</div>
+<div id="第9回-617" class="section level2">
+<h2>第9回 6/17</h2>
+<p><a href="https://colab.research.google.com/github/taroyabuki/webbook/blob/master/chapters/08_cipher.ipynb">演習用資料</a></p>
+<div id="google-colabのヒント" class="section level3">
+<h3>Google Colabのヒント</h3>
+<ul>
+<li>Google Colabでは，コードセルのコードをCtrl+Enterで実行する。</li>
+<li>「+ コード」でコードセル，「+
+テキスト」でテキストセルを追加する。</li>
+<li>テキストファイルの作り方
+<ul>
+<li>その1：コードセルで，<code>%%writefile ファイル名</code>と書いてから，その下にファイルの内容を書いて実行する。</li>
+<li>その2：コードセルで，’!echo “内容” &gt;
+ファイル名’と書いて実行する。（複数行の場合はヒアドキュメントを使う。詳細は割愛）</li>
+<li>その3：PCで作ったファイルをアップロードする。</li>
+<li>その4：ファイルがWebで公開されている場合は，コードセルで<code>!wget URL</code>を実行する。</li>
+</ul></li>
+<li>テキストファイルの確認方法：コードセルで<code>!cat ファイル名</code>と書いて実行する。</li>
+</ul>
+</div>
+<div id="第9回617の宿題ファイルの暗号化デジタル署名の検証" class="section level3">
+<h3>第9回（6/17）の宿題：ファイルの暗号化，デジタル署名の検証</h3>
+<div id="課題1メッセージの暗号化" class="section level4">
+<h4>課題1：メッセージの暗号化</h4>
+<p>講義用資料を参考に，矢吹だけが読める暗号ファイルreport-secretを作成し，GitHubで公開する。</p>
+<ol style="list-style-type: decimal">
+<li>テキストファイルreportを作成する。内容は自分の学籍番号。ASCII文字（いわゆる半角英数字）のみを使うこと。</li>
+<li>矢吹の公開鍵 <a href="https://raw.githubusercontent.com/ybktr/literacy/main/yabuki-public.pem" class="uri">https://raw.githubusercontent.com/ybktr/literacy/main/yabuki-public.pem</a>
+を使って，reportを暗号化する。暗号化されたファイルの名前はreport-secret。（公開鍵はテキストファイルだから，上記のヒントの方法で作れる。暗号化は演習用資料の方法で行う。ファイル名部分を置き換えればよい。）</li>
+<li>report-secretをGitHubにアップロードする。（本当は，クローン・コミット・プッシュなのだが，ここでは割愛）</li>
+<li><a href="https://" class="uri">https://</a>●●●.github.io/literacy/report-secret
+で暗号化されたファイルが表示されることを確認する（内容は読めない）。</li>
+<li>manabaのアンケートに，暗号化されたファイルのURLを入力する。●●●の部分を自分のユーザ名で置き換えて，アクセスできることを確認してから入力すること。</li>
+</ol>
+</div>
+<div id="課題2デジタル署名の検証" class="section level4">
+<h4>課題2：デジタル署名の検証</h4>
+<p>講義用資料を参考に，次の三つのファイルのうち，デジタル署名によって矢吹が書いたと断言できるものを選ぶ。</p>
+<ol style="list-style-type: decimal">
+<li>次の三つのメッセージをColab上に用意する。（これらはテキストファイルだから，上記のヒントの方法で作れる。）
+<ul>
+<li>メッセージ1 <a href="https://raw.githubusercontent.com/ybktr/literacy/main/message1" class="uri">https://raw.githubusercontent.com/ybktr/literacy/main/message1</a></li>
+<li>メッセージ2 <a href="https://raw.githubusercontent.com/ybktr/literacy/main/message2" class="uri">https://raw.githubusercontent.com/ybktr/literacy/main/message2</a></li>
+<li>メッセージ3 <a href="https://raw.githubusercontent.com/ybktr/literacy/main/message3" class="uri">https://raw.githubusercontent.com/ybktr/literacy/main/message3</a></li>
+</ul></li>
+<li>デジタル署名 <a href="https://raw.githubusercontent.com/ybktr/literacy/main/message-signature" class="uri">https://raw.githubusercontent.com/ybktr/literacy/main/message-signature</a>
+をColab上に用意する。これはテキストファイルではないから，上記のヒントのその3かその4の方法で作る。</li>
+<li>三つのメッセージに対して，順番に，デジタル署名を検証する。</li>
+<li>manabaのアンケートで，矢吹が書いたと断言できるファイルを選ぶ。</li>
+</ol>
+</div>
 </div>
 </div>
 
