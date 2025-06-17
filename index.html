@@ -1886,6 +1886,83 @@ Code」をインストールして，UI（ユーザインタフェース）を�
 <div id="第9回-617" class="section level2">
 <h2>第9回 6/17</h2>
 <p><a href="https://colab.research.google.com/github/taroyabuki/webbook/blob/master/chapters/08_cipher.ipynb">演習用資料</a></p>
+<div id="暗号学的ハッシュ" class="section level3">
+<h3>暗号学的ハッシュ</h3>
+<div id="ハッシュ関数の性質" class="section level4">
+<h4>ハッシュ関数の性質</h4>
+<pre><code>import hashlib
+
+# 入力文字列を指定（ここは好きな言葉に変えてOK）
+message1 = &quot;information literacy&quot;
+message2 = &quot;information literasy&quot;  # 最後の &quot;c&quot; を &quot;s&quot; に変更
+
+# ハッシュ関数（SHA-256）で計算
+hash1 = hashlib.sha256(message1.encode()).hexdigest()
+hash2 = hashlib.sha256(message2.encode()).hexdigest()
+
+# 出力して確認
+print(&quot;メッセージ1:&quot;, message1)
+print(&quot;ハッシュ1  :&quot;, hash1)
+print()
+print(&quot;メッセージ2:&quot;, message2)
+print(&quot;ハッシュ2  :&quot;, hash2)
+
+# 同じかどうかのチェック
+print(&quot;\n同じハッシュ値か？&quot;, hash1 == hash2)</code></pre>
+<p>応用先</p>
+<ul>
+<li>データの改ざん検知：ファイルやメッセージのハッシュを比較すれば、内容の一部でも変われば別のハッシュ値になる</li>
+<li>パスワードの保存：パスワード自体を保存せず、ハッシュ値だけを保存（漏れてもすぐに使えない）</li>
+<li>デジタル署名（公開鍵暗号と連携）：署名したい文書をそのまま暗号化するのではなく、まずハッシュ値に変換し、それに署名</li>
+</ul>
+</div>
+<div id="md5の衝突例" class="section level4">
+<h4>♠MD5の衝突例</h4>
+<pre><code>import hashlib, binascii, subprocess
+
+# 衝突ペア（Wang らによる2004年の例）
+hex1 = &quot;&quot;&quot;
+d131dd02c5e6eec4693d9a0698aff95c2fcab58712467eab4004583eb8fb7f89
+55ad340609f4b30283e488832571415a085125e8f7cdc99fd91dbdf280373c5b
+d8823e3156348f5bae6dacd436c919c6dd53e2b487da03fd02396306d248cda0
+e99f33420f577ee8ce54b67080a80d1ec69821bcb6a8839396f9652b6ff72a70
+&quot;&quot;&quot;
+
+hex2 = &quot;&quot;&quot;
+d131dd02c5e6eec4693d9a0698aff95c2fcab50712467eab4004583eb8fb7f89
+55ad340609f4b30283e4888325f1415a085125e8f7cdc99fd91dbd7280373c5b
+d8823e3156348f5bae6dacd436c919c6dd53e23487da03fd02396306d248cda0
+e99f33420f577ee8ce54b67080280d1ec69821bcb6a8839396f965ab6ff72a70
+&quot;&quot;&quot;
+
+# バイナリに変換
+bin1 = binascii.unhexlify(hex1.replace(&quot;\n&quot;, &quot;&quot;))
+bin2 = binascii.unhexlify(hex2.replace(&quot;\n&quot;, &quot;&quot;))
+
+# ファイル保存
+with open(&quot;msg1.bin&quot;, &quot;wb&quot;) as f:
+    f.write(bin1)
+with open(&quot;msg2.bin&quot;, &quot;wb&quot;) as f:
+    f.write(bin2)
+
+# MD5 &amp; SHA-256 のハッシュを計算
+def md5sum(data):
+    return hashlib.md5(data).hexdigest()
+def sha256sum(data):
+    return hashlib.sha256(data).hexdigest()
+
+h1_md5, h2_md5 = md5sum(bin1), md5sum(bin2)
+h1_sha, h2_sha = sha256sum(bin1), sha256sum(bin2)
+
+print(&quot;msg1.bin MD5   :&quot;, h1_md5)
+print(&quot;msg2.bin MD5   :&quot;, h2_md5)
+print(&quot;MD5 同じ？     :&quot;, h1_md5 == h2_md5)
+print()
+print(&quot;msg1.bin SHA256:&quot;, h1_sha)
+print(&quot;msg2.bin SHA256:&quot;, h2_sha)
+print(&quot;SHA256 同じ？  :&quot;, h1_sha == h2_sha)</code></pre>
+</div>
+</div>
 <div id="google-colabのヒント" class="section level3">
 <h3>Google Colabのヒント</h3>
 <ul>
