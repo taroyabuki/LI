@@ -73,11 +73,11 @@
 1. GitHub のリポジトリを作成する．
     - Repository name：`literacy`
     - Add README: On
-1. 自分のリポジトリのURLを確認する：`https://github.com/ユーザ名/test`
+1. 自分のリポジトリのURLを確認する：`https://github.com/ユーザ名/literacy`
 1. GitHub Pages を有効にする．
     1. Settings → Pages
     1. Branch のところで，main，/ (root) を選んで Save
-    1. しばらくすると有効になる．設定画面を Ctrl-r でリロードすると，「Your site is live at https://ユーザ名.github.io/test/」が現れる．そこにアクセスできれば完了
+    1. しばらくすると有効になる．設定画面を Ctrl-r でリロードすると，「Your site is live at https://ユーザ名.github.io/literacy/」が現れる．そこにアクセスできれば完了
 
-GitHub Pages の URL：`https://ユーザ名.github.io/test/` を manaba のアンケートで報告する．ユーザ名を自分のもので置き換えて，ちゃんとアクセスできることを確認してから報告すること（期限あり）．**注意：報告するのはリポジトリのURL https://github.com/ユーザ名/literacy ではない！**
+GitHub Pages の URL：`https://ユーザ名.github.io/literacy/` を manaba のアンケートで報告する．ユーザ名を自分のもので置き換えて，ちゃんとアクセスできることを確認してから報告すること（期限あり）．**注意：報告するのはリポジトリのURL https://github.com/ユーザ名/literacy ではない！**
 
