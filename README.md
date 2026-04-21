@@ -61,3 +61,23 @@
     - ♠[カーリル](https://calil.jp)
     - ♠Amazon＋ブラウザ拡張機能（例：Calilay）
 - ♠[国立国会図書館デジタルコレクション](https://dl.ndl.go.jp/)の利用者登録をする．図書館に無い，高価な古書が読めることがある．例：[後藤憲一 著『現代科学における数学概説』（共立出版, 1981）](https://dl.ndl.go.jp/pid/12608596) 参考：[アマゾン](https://www.amazon.co.jp/dp/4320012984/)
+
+## 第2回
+
+1. 教科書第1章「この本の読み方」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/01.md)
+1. 小テスト
+1. 演習
+
+### 演習
+
+1. GitHub のリポジトリを作成する．
+    - Repository name：`literacy`
+    - Add README: On
+1. 自分のリポジトリのURLを確認する：`https://github.com/ユーザ名/test`
+1. GitHub Pages を有効にする．
+    1. Settings → Pages
+    1. Branch のところで，main，/ (root) を選んで Save
+    1. しばらくすると有効になる．設定画面を Ctrl-r でリロードすると，「Your site is live at https://ユーザ名.github.io/test/」が現れる．そこにアクセスできれば完了
+
+GitHub Pages の URL：`https://ユーザ名.github.io/test/` を manaba のアンケートで報告する．ユーザ名を自分のもので置き換えて，ちゃんとアクセスできることを確認してから報告すること（期限あり）．**注意：報告するのはリポジトリのURL https://github.com/ユーザ名/literacy ではない！**
+
