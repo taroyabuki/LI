@@ -64,7 +64,7 @@
 
 ## 第2回
 
-1. 教科書第1章「この本の読み方」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/01.md)
+1. 教科書第1章「ハイパーメディア」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/01.md)
 1. 小テスト
 1. 演習
 
