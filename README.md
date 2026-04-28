@@ -1,7 +1,5 @@
 # 情報リテラシ
 
-**演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
-
 **♠が付いている項目は必須ではない．**
 
 ## ガイダンス
@@ -70,6 +68,8 @@
 
 ### 演習
 
+**演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
+
 1. GitHub のリポジトリを作成する．
     - Repository name：`literacy`
     - Add README: On
@@ -81,3 +81,23 @@
 
 GitHub Pages の URL：`https://ユーザ名.github.io/literacy/` を manaba のアンケートで報告する．ユーザ名を自分のもので置き換えて，ちゃんとアクセスできることを確認してから報告すること（期限あり）．**注意：報告するのはリポジトリのURL https://github.com/ユーザ名/literacy ではない！**
 
+## 第3回
+
+1. 教科書第2章「検索」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/02.md)
+1. 小テスト
+1. 演習
+
+### 演習
+
+**演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
+
+1. GitHubの自分のリポジトリ `literacy` に，ファイル link.html を追加する．内容は次のとおり．●と○の部分は自分で決めること．
+
+```html
+<a href="●">○</a>
+```
+
+2. Commit して少し待つと，GitHub Pages で ページが公開される．その URL は`https://ユーザ名.github.io/literacy/link.htrml` である．
+3. 実際にページが閲覧できること，リンクをクリックして意図したページに遷移できることを確認する．
+
+GitHub Pages の URL：`https://ユーザ名.github.io/literacy/link.html` を manaba のアンケートで報告する．
