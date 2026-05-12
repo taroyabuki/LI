@@ -101,3 +101,51 @@ GitHub Pages の URL：`https://ユーザ名.github.io/literacy/` を manaba の
 3. 実際にページが閲覧できること，リンクをクリックして意図したページに遷移できることを確認する．
 
 GitHub Pages の URL：`https://ユーザ名.github.io/literacy/link.html` を manaba のアンケートで報告する．
+
+## 第4回
+
+1. 教科書第3章「自分のメディア」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/03.md)
+1. 小テスト
+1. 演習
+
+マークアップに使う文字列自体を使いたいときは？　参照：教科書12.2.5項
+
+♠次の二つを比較せよ．
+
+- [HTMLのソース](https://github.com/taroyabuki/LI/blob/main/quine.html)
+- [ブラウザでの表示](https://taroyabuki.github.io/LI/quine.html)
+
+### 演習
+
+**演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
+
+#### 準備
+
+HTML ファイルを書く環境を整える．
+
+1. ファイルの拡張子が表示されるように，エクスプローラを設定する．
+1. VS Code をインストールする．
+    - Microsoft Store で「vscode」を検索して Visual Studio Code を見つけてインストールする．
+    - あるいは，スタートボタンを右クリック→ターミナルで「`winget install Microsoft.VisualStudioCode`」を実行する．
+    - あるいは，https://code.visualstudio.com からインストーラをダウンロードして実行する．♠インストール時に他ではしづらい設定ができる．
+1. VS Code の拡張機能「Live Preview」をインストールする．
+1. （オプション）VS Code の拡張機能「Japanese Language Pack for Visual Studio Code」をインストールして，UI（ユーザインタフェース）を日本語化する．
+
+#### 本題
+
+1. 作業用のフォルダ（例：デスクトップ/literacy）を作る．
+2. AI で画像を作り，デスクトップ/literacy/image.png あるいは image.jpg に保存する．
+3. VS Code で次のようなファイルを新規作成し，デスクトップ/literacy/image.html に保存する．（src 属性値をファイル名に合わせる．）
+
+```html
+<p>画像の生成に使ったプロンプト</p>
+<img src="image.png" alt="生成された画像">
+```
+
+4. Live Preview で，画像が表示されることを確認する．
+5. GitHub に，image.html と image.png をアップロードする．（本当は，クローン・コミット・プッシュなのだが，ここでは割愛）
+6. https://●●●.github.io/literacy/image.png で画像が表示されることを確認する．
+7. https://●●●.github.io/literacy/image.html で画像を含むページが表示されることを確認する．
+8. 次のURLを manaba のアンケートに入力する．●●●の部分を自分のユーザ名で置き換えて，ページにアクセスできること，画像が表示されること確認してから入力すること．
+
+画像を含むページのURL　形式はhttps://●●●.github.io/literacy/image.html
