@@ -22,9 +22,9 @@
 |2|4/21|教科書第1章|第0章，第1回の講義|GitHub Pages|有|
 |3|4/28|教科書第2章|第1章，第2回の講義|リンク|有|
 |4|5/12|教科書第3章|第2章，第3回の講義|画像|有|
-|5|5/19|教科書第4章|第3章，第4回の講義|CCライセンス|有|
-|6|5/26|教科書第5章|第4章，第5回の講義|箇条書き|有|
-|7|6/2|教科書第6章|第5章，第6回の講義|表|有|
+|5|5/19|教科書第4章|第3章，第4回の講義|箇条書き|有|
+|6|5/26|教科書第5章|第4章，第5回の講義|表|有|
+|7|6/2|教科書第6章|第5章，第6回の講義|CCライセンス|有|
 |8|6/9|教科書第7章|第6章，第7回の講義|CSS|有|
 |9|6/16|教科書第8章|第7章，第8回の講義|暗号|有|
 |10|6/22|教科書第9章|第8章，第9回の講義|構文チェック|有|
@@ -81,6 +81,11 @@
 
 GitHub Pages の URL：`https://ユーザ名.github.io/literacy/` を manaba のアンケートで報告する．ユーザ名を自分のもので置き換えて，ちゃんとアクセスできることを確認してから報告すること（期限あり）．**注意：報告するのはリポジトリのURL https://github.com/ユーザ名/literacy ではない！**
 
+#### 重要なURL
+
+- GitHubのリポジトリ（ファイル置き場）：https://github.com/●●●/literacy
+- GitHub Pages（公開用ウェブサイト）：https://●●●.github.io/literacy/
+
 ## 第3回
 
 1. 教科書第2章「検索」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/02.md)
@@ -90,6 +95,13 @@ GitHub Pages の URL：`https://ユーザ名.github.io/literacy/` を manaba の
 ### 演習
 
 **演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
+
+#### 重要なURL
+
+- GitHubのリポジトリ（ファイル置き場）：https://github.com/●●●/literacy
+- GitHub Pages（公開用ウェブサイト）：https://●●●.github.io/literacy/
+
+#### 作業
 
 1. GitHubの自分のリポジトリ `literacy` に，ファイル link.html を追加する．内容は次のとおり．●と○の部分は自分で決めること．
 
@@ -112,12 +124,17 @@ GitHub Pages の URL：`https://ユーザ名.github.io/literacy/link.html` を m
 
 ♠次の二つを比較せよ．
 
-- [HTMLのソース](https://github.com/taroyabuki/LI/blob/main/quine.html)
-- [ブラウザでの表示](https://taroyabuki.github.io/LI/quine.html)
+- [HTMLのソース](https://github.com/taroyabuki/taroyabuki.github.io/blob/master/docs/quine.html)
+- [ブラウザでの表示](https://taroyabuki.github.io/docs/quine.html)
 
 ### 演習
 
 **演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
+
+#### 重要なURL
+
+- GitHubのリポジトリ（ファイル置き場）：https://github.com/●●●/literacy
+- GitHub Pages（公開用ウェブサイト）：https://●●●.github.io/literacy/
 
 #### 準備
 
@@ -143,9 +160,34 @@ HTML ファイルを書く環境を整える．
 ```
 
 4. Live Preview で，画像が表示されることを確認する．
-5. GitHub に，image.html と image.png をアップロードする．（本当は，クローン・コミット・プッシュなのだが，ここでは割愛）
+5. GitHub (https://github.com/●●●/literacy) に，image.html と image.png をアップロードする．（本当は，クローン・コミット・プッシュなのだが，ここでは割愛）
 6. https://●●●.github.io/literacy/image.png で画像が表示されることを確認する．
 7. https://●●●.github.io/literacy/image.html で画像を含むページが表示されることを確認する．
 8. 次のURLを manaba のアンケートに入力する．●●●の部分を自分のユーザ名で置き換えて，ページにアクセスできること，画像が表示されること確認してから入力すること．
 
 画像を含むページのURL　形式はhttps://●●●.github.io/literacy/image.html
+
+## 第5回
+
+1. AIについて
+1. 教科書第4章「ライセンス」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/04.md)
+1. 小テスト
+1. 演習
+
+### 演習
+
+**演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
+
+#### 重要なURL
+
+- GitHubのリポジトリ（ファイル置き場）：https://github.com/●●●/literacy
+- GitHub Pages（公開用ウェブサイト）：https://●●●.github.io/literacy/
+
+#### 作業
+
+1. テキストエディタで空のテキストファイルlists.htmlを作成する．
+1. 3種類の箇条書きを作成する．
+1. GitHub (https://github.com/●●●/literacy) に，lists.htmlをアップロードする．（本当は，クローン・コミット・プッシュなのだが，ここでは割愛）
+1. 次のURLをmanabaのアンケートに入力する．●●●の部分を自分のユーザ名で置き換えて，ページにアクセスできること，3種類の箇条書きが表示されることを確認してから入力すること．
+
+ページのURL　形式はhttps://●●●.github.io/literacy/lists.html
