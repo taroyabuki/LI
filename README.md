@@ -191,3 +191,28 @@ HTML ファイルを書く環境を整える．
 1. 次のURLをmanabaのアンケートに入力する．●●●の部分を自分のユーザ名で置き換えて，ページにアクセスできること，3種類の箇条書きが表示されることを確認してから入力すること．
 
 ページのURL　形式はhttps://●●●.github.io/literacy/lists.html
+
+## 第6回
+
+1. 教科書第5章「シェア」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/05.md)
+1. 小テスト
+1. 演習
+
+### 演習
+
+**演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
+
+#### 重要なURL
+
+- GitHubのリポジトリ（ファイル置き場）：https://github.com/●●●/literacy
+- GitHub Pages（公開用ウェブサイト）：https://●●●.github.io/literacy/
+
+#### 作業
+
+1. テキストエディタで空のテキストファイルtable.htmlを作成する．
+1. 表を作成する．
+1. GitHub (https://github.com/●●●/literacy) に，table.htmlをアップロードする．（本当は，クローン・コミット・プッシュなのだが，ここでは割愛）
+1. 次のURLをmanabaのアンケートに入力する．●●●の部分を自分のユーザ名で置き換えて，ページにアクセスできること，表が表示されることを確認してから入力すること．
+
+ページのURL　形式はhttps://●●●.github.io/literacy/table.html
+
