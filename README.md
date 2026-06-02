@@ -216,3 +216,26 @@ HTML ファイルを書く環境を整える．
 
 ページのURL　形式はhttps://●●●.github.io/literacy/table.html
 
+## 第7回
+
+1. 教科書第6章「アカウント」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/06.md)
+1. 小テスト
+1. 演習
+
+### 演習
+
+画像を掲載する HTML ページを作り，ライセンスを明記する．
+
+1. 自分で画像を用意する．第4回で作った画像を再利用してもよい（image.html を cc.html にコピー）．ライセンスを自分で与えられるもの（自分のもの）でなければならない．
+2. 画像を表示する HTML 文書を作る．ファイル名は cc.html とする．
+3. 画像のライセンスを明記する．そのための HTML を，https://creativecommons.org/chooser/ で作成し，img 要素の下に貼り付ける．HTML の全体は次のようになる．
+
+```html
+<img src="画像ファイル名" alt="画像についての説明">
+作成した HTML 要素
+```
+
+4. GitHub (https://github.com/●●●/literacy) に，cc.htmlをアップロードする．（本当は，クローン・コミット・プッシュなのだが，ここでは割愛）
+1. 次のURLをmanabaのアンケートに入力する．●●●の部分を自分のユーザ名で置き換えて，ページにアクセスできること，画像が表示されること，ライセンスが表示されることを確認してから提出すること．
+
+ページのURL　形式はhttps://●●●.github.io/literacy/cc.html
