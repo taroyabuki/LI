@@ -224,11 +224,20 @@ HTML ファイルを書く環境を整える．
 
 ### 演習
 
+**演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
+
+#### 重要なURL
+
+- GitHubのリポジトリ（ファイル置き場）：https://github.com/●●●/literacy
+- GitHub Pages（公開用ウェブサイト）：https://●●●.github.io/literacy/
+
+#### 作業
+
 画像を掲載する HTML ページを作り，ライセンスを明記する．
 
 1. 自分で画像を用意する．第4回で作った画像を再利用してもよい（image.html を cc.html にコピー）．ライセンスを自分で与えられるもの（自分のもの）でなければならない．
 2. 画像を表示する HTML 文書を作る．ファイル名は cc.html とする．
-3. 画像のライセンスを明記する．そのための HTML を，https://creativecommons.org/chooser/ で作成し，img 要素の下に貼り付ける．HTML の全体は次のようになる．
+3. 画像のライセンスを明記する．そのための HTML を，https://creativecommons.org/chooser/ で作成し，img 要素の下に貼り付ける．HTML の全体は次のようになる．（Creator of work に本名を書いてもよいが，この課題のために本名をさらす必要はない．）
 
 ```html
 <img src="画像ファイル名" alt="画像についての説明">
@@ -236,6 +245,66 @@ HTML ファイルを書く環境を整える．
 ```
 
 4. GitHub (https://github.com/●●●/literacy) に，cc.htmlをアップロードする．（本当は，クローン・コミット・プッシュなのだが，ここでは割愛）
-1. 次のURLをmanabaのアンケートに入力する．●●●の部分を自分のユーザ名で置き換えて，ページにアクセスできること，画像が表示されること，ライセンスが表示されることを確認してから提出すること．
+5. 次のURLをmanabaのアンケートに入力する．●●●の部分を自分のユーザ名で置き換えて，ページにアクセスできること，画像が表示されること，ライセンスが表示されることを確認してから提出すること．
 
 ページのURL　形式はhttps://●●●.github.io/literacy/cc.html
+
+## 第8回
+
+1. 教科書第7章「クラウド（crowd）」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/07.md)
+1. 小テスト
+1. 演習
+
+### 演習
+
+**演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
+
+#### 重要なURL
+
+- GitHubのリポジトリ（ファイル置き場）：https://github.com/●●●/literacy
+- GitHub Pages（公開用ウェブサイト）：https://●●●.github.io/literacy/
+
+#### スタイルの適用方法
+
+色を青にすることを例に，スタイルの適用方法を三つ示す．
+
+- style属性：`<span style="color:blue;">対象</span>` とすると，対象が青になる．この方法は，自分で手で HTML を書くときは使わなくてよいが（後で変更するのが大変だから）．
+- style要素：`<style>セレクタ {color:blue;}</style>` セレクタに該当する要素にスタイルを適用する．セレクタの書き方はいろいろあるが，要素名（例：`span`）を書くのが簡単である．
+- styleファイル：`セレクタ {color:blue;}`のような内容のファイル（例：style.css）を作って，HTMLで`<link rel="stylesheet" href="style.css">`として指定する．この方法は，複数の HTML 文書に同じスタイルを適用したいときに使う．
+
+この演習ではstyle要素を使う．
+
+#### 作業
+
+CSSを使って，文書のキーワードを青にする．
+
+1. style.html を作る．内容は次の通り（教科書p.57の図3.3を参照）．
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset='utf-8' />
+  <meta name="viewport" content="width=device-width" />
+  <title>スタイル</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <p>
+  </p>
+</body>
+
+</html>
+```
+
+2. p要素の中に文章を書く（60文字程度）．
+3. 文章中のキーワードをstrong要素で強調する．（おそらく太字になる．プレビューで確認せよ．）
+4. style要素の中に `strong {color:blue;}` と書く．（指定したキーワードが青になる．プレビューで確認せよ．）
+5. GitHub (https://github.com/●●●/literacy) に，style.htmlをアップロードする．（本当は，クローン・コミット・プッシュなのだが，ここでは割愛）
+6. 次のURLをmanabaのアンケートに入力する．●●●の部分を自分のユーザ名で置き換えて，ページにアクセスできること，キーワードが青になっていることを確認してから提出すること．
+
+ページのURL　形式はhttps://●●●.github.io/literacy/style.html
