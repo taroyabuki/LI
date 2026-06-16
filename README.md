@@ -308,3 +308,45 @@ CSSを使って，文書のキーワードを青にする．
 6. 次のURLをmanabaのアンケートに入力する．●●●の部分を自分のユーザ名で置き換えて，ページにアクセスできること，キーワードが青になっていることを確認してから提出すること．
 
 ページのURL　形式はhttps://●●●.github.io/literacy/style.html
+
+## 第9回
+
+1. 教科書第8章「暗号」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/08.md)
+1. 小テスト
+1. 演習
+
+### 演習
+
+**演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
+
+#### 重要なURL
+
+- GitHubのリポジトリ（ファイル置き場）：https://github.com/●●●/literacy
+- GitHub Pages（公開用ウェブサイト）：https://●●●.github.io/literacy/
+
+#### Google Colabのヒント
+
+- Google Colabでは，コードセルのコードをCtrl+Enterで実行する．
+- 「+ コード」でコードセル，「+ テキスト」でテキストセルを追加する．
+- テキストファイルの作成方法：コードセルで，`!printf "内容" > ファイル名` を実行する．ファイルがWebで公開されている場合は，コードセルで`!wget URL` で取得する．
+- テキストファイルの確認方法：コードセルで，`!cat ファイル名` を実行する．
+
+#### 課題：メッセージの暗号化
+
+- [演習用資料](https://colab.research.google.com/github/taroyabuki/webbook/blob/master/chapters/08_cipher.ipynb)
+- 課題で用いる矢吹の公開鍵：https://raw.githubusercontent.com/taroyabuki/LI/refs/heads/main/yabuki-public.pem
+
+講義用資料を参考に，矢吹だけが読める暗号ファイル report-secret を作成し，GitHub で公開する．
+
+1. テキストファイル report を作成する．内容は自分の学籍番号．ASCII 文字（いわゆる半角英数字）のみを使うこと．
+1. 矢吹の公開鍵を使って，report を暗号化する．暗号化されたファイルの名前は report-secret．（公開鍵はテキストファイルだから，上記のヒントの方法で作れる．暗号化は演習用資料の方法で行う．ファイル名部分を置き換えればよい．）
+1. report-secret を GitHub にアップロードする．（Colab からダウンロードして，GitHub にアップロードするのが簡単．ダウンドードは，Colab上で，ファイルの右の「・・・」を縦にしたアイコンをクリックして行う．）
+1. https://●●●.github.io/literacy/report-secret で暗号化されたファイルにアクセスできることを確認する（内容は読めない）．
+1. 次のURLをmanabaのアンケートに入力する．●●●の部分を自分のユーザ名で置き換えて，ページにアクセスできることを確認してから提出すること．
+
+ページのURL　形式はhttps://●●●.github.io/literacy/report-secret
+
+ヒント
+
+- 演習用の資料の「#(4.2) ボブの公開鍵を使って暗号文を作る」を，ファイル名を置き換えて実行する．
+- 作成した暗号ファイル report-secret を読めるのは，秘密鍵を持つ矢吹だけだから，正しく暗号化できたかどうかは自分では確認できない．手順の正しさを確信したい場合は，自分で公開鍵と秘密鍵を作り，ファイルを公開鍵で暗号化し，秘密鍵で復号してみるとよいだろう．
