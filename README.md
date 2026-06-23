@@ -380,7 +380,7 @@ CSSを使って，文書のキーワードを青にする．
 1. VS Codeに，拡張機能「W3C Web Validator」をインストールする．
 1. 新しいファイルvalid.htmlを作成し，そこにウェブページのソースコードをコピーする．
 1. HTMLを修正する．
-1. 「W3C Web Validator」で構文をチェックする．構文エラーがあったら3に戻る．
+1. 「W3C Web Validator」で構文をチェックする．構文エラーがあったら3に戻る．（「W3C Web Validator」が機能しない場合は，https://validator.w3.org を使う．）
 1. 構文エラーがなくなったら，valid.htmlをGitHubにアップロードする．
 1. https://●●●.github.io/literacy/valid.html でページが表示されることを確認する．
 1. manabaのアンケートに，valid.htmlのURLを入力する．●●●の部分を自分のユーザ名で置き換えて，そのURLを https://validator.w3.org/#validate_by_uri に入力し，エラーがないことを確かめてから提出すること．
