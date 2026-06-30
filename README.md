@@ -384,3 +384,19 @@ CSSを使って，文書のキーワードを青にする．
 1. 構文エラーがなくなったら，valid.htmlをGitHubにアップロードする．
 1. https://●●●.github.io/literacy/valid.html でページが表示されることを確認する．
 1. manabaのアンケートに，valid.htmlのURLを入力する．●●●の部分を自分のユーザ名で置き換えて，そのURLを https://validator.w3.org/#validate_by_uri に入力し，エラーがないことを確かめてから提出すること．
+
+## 第11回
+
+1. 教科書第10章「データベース」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/10.md)
+1. 小テスト
+1. 演習
+
+### 演習
+
+**演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
+
+1. [SQLの実践のための資料](https://github.com/taroyabuki/webbook/blob/master/chapters/10.4/sql.ipynb)
+2. [郵便番号データベースによる体験SQL](https://github.com/taroyabuki/webbook/blob/master/chapters/10.4/zip.ipynb)
+
+「提出物10（第11回講義）」は，manabaの「小テスト」にある。
+
