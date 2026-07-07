@@ -398,5 +398,50 @@ CSSを使って，文書のキーワードを青にする．
 1. [SQLの実践のための資料](https://github.com/taroyabuki/webbook/blob/master/chapters/10.4/sql.ipynb)
 2. [郵便番号データベースによる体験SQL](https://github.com/taroyabuki/webbook/blob/master/chapters/10.4/zip.ipynb)
 
-「提出物10（第11回講義）」は，manabaの「小テスト」にある。
+「提出物10（第11回講義）」は，manabaの「小テスト」にある．
 
+## 第11回
+
+1. 教科書第11章「cloud（雲）」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/11.md)
+1. 小テスト
+1. 授業アンケート
+1. 演習
+
+### 演習
+
+**演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
+
+教室で提示するウェブページのHTMLを次に示す（一部省略）．
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+    <style>
+      #container {
+        background: #ccc;
+        border: solid 1px #555;
+        padding: 10px;
+      }
+      #box {
+        height: 100px;
+        width: 100px;
+        background: #ffbcbc;
+        border-style: solid;
+        border-color: #999;
+        /* 省略 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="box">The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </body>
+</html>
+```
+
+manabaの小テスト「提出物11（第12回講義）」に回答せよ．
