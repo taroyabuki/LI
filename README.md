@@ -506,6 +506,6 @@ manabaの小テスト「提出物11（第12回講義）」に回答せよ．
 
 1. HTML ファイルを作ってブラウザで開き，異体字が区別できることを確認する．
     1. 区別できない場合：異体字に対応していないフォントで表示している．フォントを `serif` ではなく具体的に設定する．Adobe-Japan1 という規格に対応しているフォント（例：`"Noto Serif JP"`）なら，この演習には十分である．Noto Serif JP が標準搭載されていない環境では，[Google Fonts](https://fonts.google.com/?lang=ja_Jpan&preview.lang=ja_Jpan) を使うとよいだろう．
-2. 教室で提示した「邉」の異体字を特定せよ．ヒント：Adobe-Japan1 で扱われる「邉」の異体字セレクタは `&amp;#xE0100;` から `&amp;#xE010E;` まである．HTML を編集して確認してもよいし，https://www.unicode.org/ivd/data/latest/ にある IVD_Charts_Adobe-Japan1.pdf で確認してもよい．
+2. 教室で提示した「邉」の異体字を特定せよ．ヒント：Adobe-Japan1 で扱われる「邉」の異体字セレクタは `&#xE0100;` から `&#xE010E;` まである．HTML を編集して確認してもよいし，https://www.unicode.org/ivd/data/latest/ にある IVD_Charts_Adobe-Japan1.pdf で確認してもよい．
 
 manabaの小テスト「提出物12（第13回講義）」に回答せよ．
