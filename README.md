@@ -30,7 +30,7 @@
 |10|6/23|教科書第9章|第8章，第9回の講義|構文チェック|有|
 |11|6/30|教科書第10章|第9章，第10回の講義|データベース|有|
 |12|7/7|教科書第11章|第10章，第11回の講義|ボックスモデル|有|
-|13|7/14|教科書第12章|第11章，第12回の講義|フォント|有|
+|13|7/14|教科書第12章|第11章，第12回の講義|文字コード|有|
 
 ### 成績
 
@@ -400,7 +400,7 @@ CSSを使って，文書のキーワードを青にする．
 
 「提出物10（第11回講義）」は，manabaの「小テスト」にある．
 
-## 第11回
+## 第12回
 
 1. 教科書第11章「cloud（雲）」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/11.md)
 1. 小テスト
@@ -445,3 +445,67 @@ CSSを使って，文書のキーワードを青にする．
 ```
 
 manabaの小テスト「提出物11（第12回講義）」に回答せよ．
+
+## 第13回
+
+1. 教科書第12章「間接参照」 [補足資料](https://github.com/taroyabuki/webbook/blob/master/chapters/12.md)
+1. 小テスト
+1. 授業アンケート（再）
+1. 演習
+
+### 演習
+
+**演習では，他人のデバイスに触らない．自分のデバイスを，他人に触らせない．**
+
+異体字セレクタを使う例を示す．
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>異体字セレクタ</title>
+    <style>
+      * { text-align: center; }
+      table { border-collapse: collapse; }
+      .char {
+        font-family: serif;
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>辻&#xE0100;と辻&#xE0101;</caption>
+      <tr style="border-top: solid 1px black;">
+        <td style="border-right: solid 1px black;">文字</td>
+        <td class="char">辻&#xE0100;</td>
+        <td class="char">辻&#xE0101;</td>
+      </tr>
+      <tr style="border-bottom: solid 1px black;">
+        <td style="border-right: solid 1px black;">HTML</td>
+        <td><code>辻&amp;#xE0100;</code></td>
+        <td><code>辻&amp;#xE0101;</code></td>
+      </tr>
+    </table>
+
+    <table>
+      <caption>Adobe-Japan1 に登録されている邉（U+9089）の異体字</caption>
+      <tr class="char" style="border-top: solid 1px black;">
+        <td>邉&#xE0100;</td>
+        <td>邉&#xE0101;</td>
+      </tr>
+      <tr style="border-bottom: solid 1px black;">
+        <td><code>E0100</code></td>
+        <td><code>E0101</code></td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
+
+1. HTML ファイルを作ってブラウザで開き，異体字が区別できることを確認する．
+    1. 区別できない場合：異体字に対応していないフォントで表示している．フォントを `serif` ではなく具体的に設定する．Adobe-Japan1 という規格に対応しているフォント（例：`"Noto Serif JP"`）なら，この演習には十分である．Noto Serif JP が標準搭載されていない環境では，[Google Fonts](https://fonts.google.com/?lang=ja_Jpan&preview.lang=ja_Jpan) を使うとよいだろう．
+2. 教室で提示した「邉」の異体字を特定せよ．ヒント：Adobe-Japan1 で扱われる「邉」の異体字セレクタは `&amp;#xE0100;` から `&amp;#xE010E;` まである．HTML を編集して確認してもよいし，https://www.unicode.org/ivd/data/latest/ にある IVD_Charts_Adobe-Japan1.pdf で確認してもよい．
+
+manabaの小テスト「提出物12（第13回講義）」に回答せよ．
